@@ -4,8 +4,16 @@ void main() => runApp(MaterialApp(
   home: NinjaCard(),
 ));
 
-class NinjaCard extends StatelessWidget {
+class NinjaCard extends StatefulWidget {
   const NinjaCard({Key? key}) : super(key: key);
+
+  @override
+  _NinjaCardState createState() => _NinjaCardState();
+}
+
+class _NinjaCardState extends State<NinjaCard> {
+
+  int ninjaLevel = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +25,35 @@ class NinjaCard extends StatelessWidget {
         backgroundColor: Colors.teal[900],
         elevation: 0.0,
       ),
+      floatingActionButtonLocation:
+        FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            FloatingActionButton(
+              onPressed: (){
+                setState(() {
+                  ninjaLevel +=1;
+                });
+              },
+              child: Icon(Icons.arrow_drop_up),
+              backgroundColor: Colors.teal[400],
+            ),
+            FloatingActionButton(
+              onPressed: (){
+                setState(() {
+                  ninjaLevel -=1;
+                });
+              },
+              child: Icon(Icons.arrow_drop_down),
+              backgroundColor: Colors.teal[400],
+            ),
+          ],
+        ),
+      ),
+
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
@@ -59,7 +96,7 @@ class NinjaCard extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-                '8',
+                '$ninjaLevel',
                 style: TextStyle(
                   color: Colors.orangeAccent[100],
                   letterSpacing: 2.0,
@@ -84,13 +121,14 @@ class NinjaCard extends StatelessWidget {
                   ),
                 ),
 
-              ],
-            )
-
           ],
         ),
-      ),
-    );
+      ]
+        ),
+    ),);
   }
 }
+
+
+
 
