@@ -4,6 +4,8 @@ My first flutter UI project taught by The Net Ninja:
 
 ![alt text](https://user-images.githubusercontent.com/47259076/129825649-86e1cbc4-bd53-4bf5-9663-352461dfe1fc.png)
 
+Just a simple ID interface with name, ninja level and my gmail.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
