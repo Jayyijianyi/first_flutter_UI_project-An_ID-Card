@@ -2,7 +2,7 @@
 
 My first flutter UI project taught by The Net Ninja:
 
-https://user-images.githubusercontent.com/47259076/129825649-86e1cbc4-bd53-4bf5-9663-352461dfe1fc.png
+![alt text](https://user-images.githubusercontent.com/47259076/129825649-86e1cbc4-bd53-4bf5-9663-352461dfe1fc.png)
 
 ## Getting Started
 
