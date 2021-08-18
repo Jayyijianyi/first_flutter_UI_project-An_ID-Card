@@ -1,6 +1,10 @@
 # project0_ninja_id_project
 
-A new Flutter project.
+My first flutter UI project taught by [The Net Ninja](https://www.youtube.com/watch?v=c063ddhWafo&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=15&ab_channel=TheNetNinja):
+
+![alt text](https://user-images.githubusercontent.com/47259076/129825649-86e1cbc4-bd53-4bf5-9663-352461dfe1fc.png)
+
+Just a simple ID interface with name, ninja level and my gmail.
 
 ## Getting Started
 
